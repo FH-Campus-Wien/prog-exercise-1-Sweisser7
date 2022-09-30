@@ -1,6 +1,6 @@
 package at.ac.fhcampuswien;
 
-import java.sql.SQLOutput;
+//import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class App {
@@ -12,16 +12,16 @@ public class App {
 
     //todo Task 2
     public void helloRobot(){
-        System.out.println("0123456789012345678901\n" +
-                "         __\n" +
-                " _(\\    |@@| \n" +
-                "(__/\\__ \\--/ __ \n" +
-                "   \\___|----|  |   __ \n" +
-                "       \\ }{ /\\ )_ / _\\ \n" +
-                "       /\\__/\\ \\__O (__ \n" +
-                "      (--/\\--)    \\__/ \n" +
-                "      _)( )(_\n" +
-                "     `---''---`"
+        System.out.print("0123456789012345678901" + System.lineSeparator() +
+                "         __" + System.lineSeparator() +
+                " _(\\    |@@|" + System.lineSeparator() +
+                "(__/\\__ \\--/ __" + System.lineSeparator() +
+                "   \\___|----|  |   __" + System.lineSeparator() +
+                "       \\ }{ /\\ )_ / _\\" + System.lineSeparator() +
+                "       /\\__/\\ \\__O (__" + System.lineSeparator() +
+                "      (--/\\--)    \\__/" + System.lineSeparator() +
+                "      _)(  )(_" + System.lineSeparator() +
+                "     `---''---`" + System.lineSeparator()
 );
     }
 
@@ -32,12 +32,26 @@ public class App {
 
     //todo Task 4
     public void addTwoNumbers(){
-        // input your solution here
+        Scanner scan = new Scanner( System.in);
+        //System.out.print("Bitte gib zwei ganze Zahlen ein:\n");
+        int count1 = scan.nextInt();
+        int count2 = scan.nextInt();
+        int sum = count1 + count2;
+        System.out.print(sum + System.lineSeparator());
     }
 
     //todo Task 5
     public void swapTwoNumbers(){
-        // input your solution here
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
+        int y = scan.nextInt();
+        System.out.print("Before Swap:" + System.lineSeparator() + "x:" + " y: ");
+        x = x+y;
+        y = x-y;
+        x = x-y;
+        System.out.print("After Swap:" + System.lineSeparator() +  "x: " + x + System.lineSeparator() +
+                "y: " + y + System.lineSeparator());
+
     }
 
     //todo Task 6
