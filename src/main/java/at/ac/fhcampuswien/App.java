@@ -55,8 +55,21 @@ public class App {
     }
 
     //todo Task 6
-    public void compareTwoNumbers(){
-        // input your solution here
+    public void compareTwoNumbers() {
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
+        int y = scan.nextInt();
+
+        if (x - y < 0) {
+            //boolean b = x - y > 0;
+            System.out.print("n1: n2: n2 > n1"+ System.lineSeparator());
+        }
+        else if (x - y > 0) {
+            System.out.print("n1: n2: n1 > n2"+ System.lineSeparator());
+        }
+        else {
+            System.out.print("n1: n2: n1 == n2"+ System.lineSeparator());
+        }
     }
 
     //todo Task 7
