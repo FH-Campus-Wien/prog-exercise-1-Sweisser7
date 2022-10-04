@@ -1,6 +1,6 @@
 package at.ac.fhcampuswien;
 
-//import java.sql.SQLOutput;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class App {
@@ -74,16 +74,55 @@ public class App {
 
     //todo Task 7
     public void ratingSalesPerson(){
-        // input your solution here
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Enter annual Revenue: ");
+        int x = s.nextInt();
+
+        if (x >= 0 && x < 20000)
+        {
+            System.out.println("Poor Sales Revenue");
+        } else if (x >= 20000 && x < 50000)
+        {
+            System.out.println("Average Sales Revenue");
+        } else if (x >= 50000 && x < 80000)
+        {
+            System.out.println("Good Sales Revenue");
+        } else if (x >= 80000 && x < 100000)
+        {
+            System.out.println("Excellent Sales Revenue");
+        } else {
+            System.out.println("Invalid Revenue");
+        }
     }
 
     //todo Task 8
-    public void getCommissionRate(){
-        // input your solution here
+    public void getCommissionRate() {
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Enter CommissionClass: ");
+        int x = s.nextInt();
+
+        switch (x) {
+            case 1:
+                System.out.println("Your Commission Rate was set to 0.01");
+                break;
+            case 2:
+                System.out.println("Your Commission Rate was set to 0.02");
+                break;
+            case 3:
+                System.out.println("Your Commission Rate was set to 0.03");
+                break;
+            case 4:
+                System.out.println("Your Commission Rate was set to 0.04");
+                break;
+            default:
+                System.out.println("Your Commission Rate was set to 0.0");
+        }
     }
 
     //todo Task 9
-    public void leapyear(){
+        public void leapyear() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Year: ");
         int x = scan.nextInt();
@@ -104,7 +143,19 @@ public class App {
 
     //todo Task 10
     public void transposedNumbers(){
-        // input your solution here
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Number: ");
+        int x = scan.nextInt();
+        int y = 0;
+
+        while (x != 0)
+        {
+            int z = x % 10;
+            y = y * 10 + z;
+            x = x/10;
+        }
+        System.out.println(y);
     }
 
 
